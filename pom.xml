@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.wings27</groupId>
@@ -11,6 +12,7 @@
         <connection>scm:git:git@github.com:wings27/mbg-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:wings27/mbg-plugin.git</developerConnection>
         <url>https://github.com/wings27/mbg-plugin/tree/master</url>
+        <tag>HEAD</tag>
     </scm>
 
     <dependencies>
@@ -24,7 +26,18 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.7</version>
         </dependency>
-
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>oss-sonatype</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>oss-sonatype</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+            </url>
+        </repository>
+    </distributionManagement>
 
 </project>
