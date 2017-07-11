@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>mbg-plugin-mt</name>
+    <name>mbg-plugin</name>
     <description>Mybatis generator plugin with many useful features.</description>
 
     <url>https://github.com/wings27/mbg-plugin</url>
